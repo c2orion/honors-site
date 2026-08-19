@@ -12,44 +12,48 @@
 		<meta name="keywords" content="Steel Structure, ISO 3834 Welding, Coke Oven Machinery, Industrial Supply Chain, NDT Testing, Honors Industrial, Engineering Compliance" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* 新增照片墙 4:3 样式 */
+			/* 照片墙 4:3 样式 */
 			.project-gallery {
 				display: flex;
 				overflow-x: auto;
 				gap: 20px;
 				padding: 20px 0;
 				scrollbar-width: thin;
+				-webkit-overflow-scrolling: touch;
 			}
 			.project-item {
-				min-width: 300px;
+				min-width: 280px;
 				flex: 0 0 auto;
 			}
 			.project-item img {
 				width: 100%;
-				aspect-ratio: 4 / 3; /* 强制 4:3 比例 */
+				aspect-ratio: 4 / 3;
 				object-fit: cover;
-				border-radius: 8px;
+				border-radius: 6px;
 				box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 				border: 1px solid #ddd;
+				display: block;
 			}
 			.project-item p {
 				text-align: center;
 				margin-top: 10px;
-				font-size: 0.9em;
+				font-size: 0.85em;
 				font-weight: bold;
+				color: #444;
 			}
-			/* 认证图标样式 */
+			/* 认证卡片样式 */
 			.cert-list {
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-				gap: 20px;
-				margin-top: 30px;
+				gap: 15px;
+				margin-top: 25px;
 			}
 			.cert-card {
-				background: #f9f9f9;
-				padding: 20px;
-				border-left: 4px solid #c33; /* 红石色 */
+				background: #f4f4f4;
+				padding: 15px;
+				border-left: 4px solid #c33;
 				text-align: left;
+				font-size: 0.9em;
 			}
 		</style>
 	</head>
@@ -65,8 +69,7 @@
 								<nav id="nav">
 									<a href="index.html">Home</a>
 									<a href="#features">Industries</a>
-									<a href="#projects">Projects</a>
-									<a href="#content">Compliance</a>
+									<a href="#content">About & Compliance</a>
 									<a href="#footer">Contact Us</a>
 								</nav>
 							</div>
@@ -84,44 +87,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-
-			<!-- Project Gallery (照片墙区) -->
-				<section id="projects" style="background: #fff; padding: 60px 0;">
-					<div class="container">
-						<header>
-							<h2 style="font-size: 2em; margin-bottom: 10px;">Field Project Gallery</h2>
-							<p>Real-world execution of high-quality industrial supplies across the globe.</p>
-						</header>
-						<div class="project-gallery">
-							<!-- 项目照片 1 -->
-							<div class="project-item">
-								<img src="images/project-01.jpg" alt="Steel Structure Fabrication" />
-								<p>Precision Steel Fabrication</p>
-							</div>
-							<!-- 项目照片 2 -->
-							<div class="project-item">
-								<img src="images/project-02.jpg" alt="Coke Oven Machinery" />
-								<p>Coke Oven Machinery Assembly</p>
-							</div>
-							<!-- 项目照片 3 -->
-							<div class="project-item">
-								<img src="images/project-03.jpg" alt="Mining Equipment" />
-								<p>Heavy Mining Equipment Sourcing</p>
-							</div>
-							<!-- 项目照片 4 -->
-							<div class="project-item">
-								<img src="images/project-04.jpg" alt="Site Inspection" />
-								<p>On-site Quality Inspection</p>
-							</div>
-							<!-- 项目照片 5 -->
-							<div class="project-item">
-								<img src="images/project-05.jpg" alt="Logistics" />
-								<p>International Logistics Management</p>
-							</div>
-						</div>
-						<p style="font-size: 0.8em; color: #888;">* Swipe left/right to view more projects</p>
 					</div>
 				</section>
 
@@ -175,6 +140,7 @@
 										<strong>Honors Industrial (HongShi)</strong> was founded by senior engineers with a "Red Stone" spirit—representing the glowing coke from the oven, symbolizing our burning devotion to excellence. 
 										We bridge the gap between Western industrial standards and China's manufacturing power.
 									</p>
+									<!-- 资质认证列表 -->
 									<div class="cert-list">
 										<div class="cert-card">
 											<strong>ISO 3834 Certified</strong><br/>International welding quality requirements.
@@ -202,10 +168,34 @@
 										<li><strong>Shanghai Baosteel:</strong> Equipment commissioning.</li>
 										<li><strong>South Africa:</strong> Strategic rail and mining steel exports.</li>
 										<li><strong>Australia:</strong> Professional QA/QC & Technical Audit.</li>
+										<li><strong>UK Projects:</strong> Compliance consulting and steel sourcing.</li>
 									</ul>
 								</section>
 							</div>
 						</div>
+					</div>
+				</section>
+
+			<!-- Project Gallery (倒数第二栏：照片墙) -->
+				<section id="projects" style="background: #fbfbfb; padding: 60px 0; border-top: 1px solid #eee;">
+					<div class="container">
+						<header>
+							<h2 style="font-size: 2em; margin-bottom: 10px;">Field Project Gallery</h2>
+							<p>Real-world execution of high-quality industrial supplies and site operations.</p>
+						</header>
+						<div class="project-gallery">
+							<div class="project-item"><img src="images/project-01.jpg" alt="Industrial Project 1" /><p>Steel Fabrication</p></div>
+							<div class="project-item"><img src="images/project-02.jpg" alt="Industrial Project 2" /><p>Coke Machinery Assembly</p></div>
+							<div class="project-item"><img src="images/project-03.jpg" alt="Industrial Project 3" /><p>On-site Inspection</p></div>
+							<div class="project-item"><img src="images/project-04.jpg" alt="Industrial Project 4" /><p>Mining Equipment</p></div>
+							<div class="project-item"><img src="images/project-05.jpg" alt="Industrial Project 5" /><p>Custom Steel Structure</p></div>
+							<div class="project-item"><img src="images/project-06.jpg" alt="Industrial Project 6" /><p>Quality Auditing</p></div>
+							<div class="project-item"><img src="images/project-07.jpg" alt="Industrial Project 7" /><p>Loading & Logistics</p></div>
+							<div class="project-item"><img src="images/project-08.jpg" alt="Industrial Project 8" /><p>Hydraulic Systems</p></div>
+							<div class="project-item"><img src="images/project-09.jpg" alt="Industrial Project 9" /><p>Welding Excellence</p></div>
+							<div class="project-item"><img src="images/project-10.jpg" alt="Industrial Project 10" /><p>Southern Africa Rail Project</p></div>
+						</div>
+						<p style="font-size: 0.8em; color: #999; margin-top: 10px;">* Swipe left or right to explore our work</p>
 					</div>
 				</section>
 
