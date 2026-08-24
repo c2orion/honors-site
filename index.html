@@ -8,40 +8,52 @@
 		<title>Honors Industrial | Global Steel & Industrial Supply Chain Expert</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Honors Industrial (HongShi) bridges the gap between global demands and China's high-quality steel supply chain with 20+ years of engineering expertise. Specializing in ISO 3834 and ISO 9001 compliance." />
-		<meta name="keywords" content="Steel Structure, ISO 3834 Welding, Coke Oven Machinery, Industrial Supply Chain, NDT Testing, Honors Industrial, Engineering Compliance" />
+		<meta name="description" content="Honors Industrial (HongShi) bridges the gap between global demands and China's high-quality steel supply chain with 20+ years of engineering expertise. Specializing in ISO 3834 and EN 1090 compliance." />
+		<meta name="keywords" content="Steel Structure, ISO 3834 Welding, EN 1090, Coke Oven Machinery, Industrial Supply Chain, NDT Testing, Honors Industrial" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!-- 引入大图查看器 CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+		
 		<style>
-			/* 照片墙 4:3 样式 */
+			/* 照片墙容器 */
 			.project-gallery {
 				display: flex;
 				overflow-x: auto;
-				gap: 20px;
+				gap: 15px;
 				padding: 20px 0;
 				scrollbar-width: thin;
 				-webkit-overflow-scrolling: touch;
 			}
+			/* 单个缩略图条目 */
 			.project-item {
-				min-width: 280px;
+				min-width: 260px; /* 控制缩略图宽度 */
+				max-width: 260px;
 				flex: 0 0 auto;
 			}
 			.project-item img {
 				width: 100%;
 				aspect-ratio: 4 / 3;
 				object-fit: cover;
-				border-radius: 6px;
-				box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-				border: 1px solid #ddd;
+				border-radius: 4px;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+				border: 1px solid #eee;
 				display: block;
+				transition: transform 0.3s ease;
+			}
+			/* 悬停效果提示可以点击 */
+			.project-item img:hover {
+				transform: scale(1.02);
+				cursor: zoom-in;
 			}
 			.project-item p {
 				text-align: center;
-				margin-top: 10px;
+				margin-top: 8px;
 				font-size: 0.85em;
-				font-weight: bold;
-				color: #444;
+				font-weight: 600;
+				color: #555;
 			}
-			/* 认证卡片样式 */
+			/* 资质卡片 */
 			.cert-list {
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -140,19 +152,18 @@
 										<strong>Honors Industrial (HongShi)</strong> was founded by senior engineers with a "Red Stone" spirit—representing the glowing coke from the oven, symbolizing our burning devotion to excellence. 
 										We bridge the gap between Western industrial standards and China's manufacturing power.
 									</p>
-									<!-- 资质认证列表 -->
 									<div class="cert-list">
 										<div class="cert-card">
-											<strong>ISO 3834 Certified</strong><br/>International welding quality requirements.
+											<strong>ISO 3834 Certified</strong><br/>Quality requirements for fusion welding.
 										</div>
 										<div class="cert-card">
-											<strong>EN 1090-2</strong><br/>Quality Management System standard.
+											<strong>EN 1090-2 (EXC2/3)</strong><br/>Technical requirements for steel structures.
 										</div>
 										<div class="cert-card">
-											<strong>Special Equipment License</strong><br/>Inspection & Testing Certificate.
+											<strong>Special Equipment License</strong><br/>Mandatory Inspection & Testing Certificate.
 										</div>
 										<div class="cert-card">
-											<strong>NDT Qualifications</strong><br/>Non-Destructive Testing technical expertise.Including UT, MT and PT.
+											<strong>NDT Qualifications</strong><br/>Technical expertise in UT, MT and PT.
 										</div>
 									</div>
 								</section>
@@ -176,26 +187,49 @@
 					</div>
 				</section>
 
-			<!-- Project Gallery (倒数第二栏：照片墙) -->
+			<!-- Project Gallery (照片墙) -->
 				<section id="projects" style="background: #fbfbfb; padding: 60px 0; border-top: 1px solid #eee;">
 					<div class="container">
 						<header>
 							<h2 style="font-size: 2em; margin-bottom: 10px;">Field Project Gallery</h2>
-							<p>Real-world execution of high-quality industrial supplies and site operations.</p>
+							<p>Click on any image to view details of our site operations.</p>
 						</header>
 						<div class="project-gallery">
-							<div class="project-item"><img src="images/project-01.jpg" alt="Industrial Project 1" /><p>Steel Fabrication</p></div>
-							<div class="project-item"><img src="images/project-02.jpg" alt="Industrial Project 2" /><p>Coke Machinery Assembly</p></div>
-							<div class="project-item"><img src="images/project-03.jpg" alt="Industrial Project 3" /><p>On-site Inspection</p></div>
-							<div class="project-item"><img src="images/project-04.jpg" alt="Industrial Project 4" /><p>Mining Equipment</p></div>
-							<div class="project-item"><img src="images/project-05.jpg" alt="Industrial Project 5" /><p>Custom Steel Structure</p></div>
-							<div class="project-item"><img src="images/project-06.jpg" alt="Industrial Project 6" /><p>Quality Auditing</p></div>
-							<div class="project-item"><img src="images/project-07.jpg" alt="Industrial Project 7" /><p>Loading & Logistics</p></div>
-							<div class="project-item"><img src="images/project-08.jpg" alt="Industrial Project 8" /><p>Hydraulic Systems</p></div>
-							<div class="project-item"><img src="images/project-09.jpg" alt="Industrial Project 9" /><p>Welding Excellence</p></div>
-							<div class="project-item"><img src="images/project-10.jpg" alt="Industrial Project 10" /><p>Southern Africa Rail Project</p></div>
+							<!-- 使用 glightbox 类开启大图功能 -->
+							<div class="project-item">
+								<a href="images/project-01.jpg" class="glightbox"><img src="images/project-01.jpg" alt="Steel Fabrication" /></a>
+								<p>Steel Fabrication</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-02.jpg" class="glightbox"><img src="images/project-02.jpg" alt="Coke Machinery" /></a>
+								<p>Coke Machinery Assembly</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-03.jpg" class="glightbox"><img src="images/project-03.jpg" alt="Site Inspection" /></a>
+								<p>On-site Inspection</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-04.jpg" class="glightbox"><img src="images/project-04.jpg" alt="Mining Equipment" /></a>
+								<p>Mining Equipment</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-05.jpg" class="glightbox"><img src="images/project-05.jpg" alt="Steel Structure" /></a>
+								<p>Custom Steel Structure</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-06.jpg" class="glightbox"><img src="images/project-06.jpg" alt="Quality Audit" /></a>
+								<p>Quality Auditing</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-07.jpg" class="glightbox"><img src="images/project-07.jpg" alt="Logistics" /></a>
+								<p>Loading & Logistics</p>
+							</div>
+							<div class="project-item">
+								<a href="images/project-08.jpg" class="glightbox"><img src="images/project-08.jpg" alt="Technical Operation" /></a>
+								<p>Southern Africa Project</p>
+							</div>
 						</div>
-						<p style="font-size: 0.8em; color: #999; margin-top: 10px;">* Swipe left or right to explore our work</p>
+						<p style="font-size: 0.8em; color: #999; margin-top: 10px;">* Swipe left or right to explore. Click to enlarge.</p>
 					</div>
 				</section>
 
@@ -250,5 +284,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- 引入大图查看器 JS 并初始化 -->
+			<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+			<script type="text/javascript">
+				const lightbox = GLightbox({
+					selector: '.glightbox'
+				});
+			</script>
 	</body>
 </html>
