@@ -1,8 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Halcyonic by HTML5 UP
-	Professional Edition for Honors Industrial
--->
 <html>
 	<head>
 		<title>Honors Industrial | Global Steel & Industrial Supply Chain Expert</title>
@@ -10,63 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Honors Industrial (HongShi) bridges the gap between global demands and China's high-quality steel supply chain with 20+ years of engineering expertise. Specializing in ISO 3834 and EN 1090 compliance." />
 		<meta name="keywords" content="Steel Structure, ISO 3834 Welding, EN 1090, Coke Oven Machinery, Industrial Supply Chain, NDT Testing, Honors Industrial" />
-		<link rel="stylesheet" href="assets/css/main.css" />
 		
-		<!-- 引入大图查看器 CSS -->
+		<!-- 网站图标 Favicon -->
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 		
 		<style>
-			/* 照片墙容器 */
-			.project-gallery {
-				display: flex;
-				overflow-x: auto;
-				gap: 15px;
-				padding: 20px 0;
-				scrollbar-width: thin;
-				-webkit-overflow-scrolling: touch;
-			}
-			/* 单个缩略图条目 */
-			.project-item {
-				min-width: 260px; /* 控制缩略图宽度 */
-				max-width: 260px;
-				flex: 0 0 auto;
-			}
-			.project-item img {
-				width: 100%;
-				aspect-ratio: 4 / 3;
-				object-fit: cover;
-				border-radius: 4px;
-				box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-				border: 1px solid #eee;
-				display: block;
-				transition: transform 0.3s ease;
-			}
-			/* 悬停效果提示可以点击 */
-			.project-item img:hover {
-				transform: scale(1.02);
-				cursor: zoom-in;
-			}
-			.project-item p {
-				text-align: center;
-				margin-top: 8px;
-				font-size: 0.85em;
-				font-weight: 600;
-				color: #555;
-			}
-			/* 资质卡片 */
-			.cert-list {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-				gap: 15px;
-				margin-top: 25px;
-			}
-			.cert-card {
-				background: #f4f4f4;
-				padding: 15px;
-				border-left: 4px solid #c33;
-				text-align: left;
-				font-size: 0.9em;
-			}
+			.project-gallery { display: flex; overflow-x: auto; gap: 15px; padding: 20px 0; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+			.project-item { min-width: 260px; max-width: 260px; flex: 0 0 auto; }
+			.project-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: transform 0.3s ease; }
+			.project-item img:hover { transform: scale(1.02); cursor: zoom-in; }
+			.project-item p { text-align: center; margin-top: 8px; font-size: 0.85em; font-weight: 600; color: #555; }
+			.cert-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 25px; }
+			.cert-card { background: #f4f4f4; padding: 15px; border-left: 4px solid #c33; text-align: left; font-size: 0.9em; }
 		</style>
 	</head>
 	<body>
@@ -77,7 +31,8 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<h1><a href="index.html" id="logo">Honors Industrial</a></h1>
+								<!-- Logo 插槽 -->
+								<h1><a href="index.html" id="logo"><img src="images/honors-logo.png" alt="Honors Industrial" style="height: 60px; vertical-align: middle;" /></a></h1>
 								<nav id="nav">
 									<a href="index.html">Home</a>
 									<a href="#features">Industries</a>
@@ -102,84 +57,51 @@
 					</div>
 				</section>
 
-			<!-- Features (Industries) -->
+			<!-- Features -->
 				<section id="features">
 					<div class="container">
 						<div class="row">
 							<div class="col-3 col-6-medium col-12-small">
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/pic01.jpg" alt="Coke Machinery" /></a>
-									<h2>Coke Machinery</h2>
-									<p>From Charging Cars to Quenching Cars, we cover fabrication, hydraulic systems, and commissioning.</p>
-								</section>
+								<section><a href="#" class="bordered-feature-image"><img src="images/pic01.jpg" alt="Coke Machinery" /></a><h2>Coke Machinery</h2><p>From Charging Cars to Quenching Cars, we cover fabrication, hydraulic systems, and commissioning.</p></section>
 							</div>
 							<div class="col-3 col-6-medium col-12-small">
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/pic02.jpg" alt="Steel Structures" /></a>
-									<h2>Steel Structures</h2>
-									<p>Sophisticated industrial plants adhering to strict EN/ASTM compliance and QA/QC standards.</p>
-								</section>
+								<section><a href="#" class="bordered-feature-image"><img src="images/pic02.jpg" alt="Steel Structures" /></a><h2>Steel Structures</h2><p>Sophisticated industrial plants adhering to strict EN/ASTM compliance and QA/QC standards.</p></section>
 							</div>
 							<div class="col-3 col-6-medium col-12-small">
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/pic03.jpg" alt="Heavy Machinery" /></a>
-									<h2>Heavy Machinery</h2>
-									<p>Strategic supply chain for Construction & Mining machinery (XCMG, SANY) and OEM parts.</p>
-								</section>
+								<section><a href="#" class="bordered-feature-image"><img src="images/pic03.jpg" alt="Heavy Machinery" /></a><h2>Heavy Machinery</h2><p>Strategic supply chain for Construction & Mining machinery and OEM parts.</p></section>
 							</div>
 							<div class="col-3 col-6-medium col-12-small">
-								<section>
-									<a href="#" class="bordered-feature-image"><img src="images/pic04.jpg" alt="Mining Industry" /></a>
-									<h2>Mining & Rails</h2>
-									<p>Specialized sourcing of rails and steel materials for mining assets in Southern Africa.</p>
-								</section>
+								<section><a href="#" class="bordered-feature-image"><img src="images/pic04.jpg" alt="Mining Industry" /></a><h2>Mining & Rails</h2><p>Specialized sourcing of rails and steel materials for mining assets.</p></section>
 							</div>
 						</div>
 					</div>
 				</section>
 
-			<!-- Content (About & Compliance) -->
+			<!-- Content -->
 				<section id="content">
 					<div class="container">
 						<div class="row aln-center">
 							<div class="col-6 col-12-medium">
 								<section>
-									<header>
-										<h2>Who We Are</h2>
-										<h3>20+ Years of Industrial Expertise</h3>
-									</header>
-									<p>
-										<strong>Honors Industrial (HongShi)</strong> was founded by senior engineers with a "Red Stone" spirit—representing the glowing coke from the oven, symbolizing our burning devotion to excellence. 
-										We bridge the gap between Western industrial standards and China's manufacturing power.
-									</p>
+									<header><h2>Who We Are</h2><h3>20+ Years of Industrial Expertise</h3></header>
+									<p><strong>Honors Industrial (HongShi)</strong> bridges the gap between Western industrial standards and China's manufacturing power.</p>
 									<div class="cert-list">
-										<div class="cert-card">
-											<strong>ISO 3834 Certified</strong><br/>Quality requirements for fusion welding.
-										</div>
-										<div class="cert-card">
-											<strong>EN 1090-2 (EXC2/3)</strong><br/>Technical requirements for steel structures.
-										</div>
-										<div class="cert-card">
-											<strong>Special Equipment License</strong><br/>Mandatory Inspection & Testing Certificate.
-										</div>
-										<div class="cert-card">
-											<strong>NDT Qualifications</strong><br/>Technical expertise in UT, MT and PT.
-										</div>
+										<div class="cert-card"><strong>ISO 3834 Certified</strong><br/>Welding quality requirements.</div>
+										<div class="cert-card"><strong>EN 1090-2 (EXC2/3)</strong><br/>Steel structure technical requirements.</div>
+										<div class="cert-card"><strong>Special Equipment License</strong><br/>Mandatory Inspection & Testing.</div>
+										<div class="cert-card"><strong>NDT Qualifications</strong><br/>Expertise in UT, MT, and PT testing.</div>
 									</div>
 								</section>
 							</div>
 							<div class="col-6 col-12-medium">
 								<section>
-									<header>
-										<h2>Global Case Studies</h2>
-									</header>
+									<header><h2>Global Case Studies</h2></header>
 									<ul class="check-list">
-										<li><strong>Brazil/Argentina:</strong> Coke Oven Machinery fabrication.</li>
-										<li><strong>Japan:</strong> High-standard coke tank welding (Fukuda).</li>
-										<li><strong>Shanghai Baosteel:</strong> Equipment commissioning.</li>
-										<li><strong>South Africa:</strong> Strategic rail and mining steel exports.</li>
-										<li><strong>Australia:</strong> Professional QA/QC & Technical Audit.</li>
-										<li><strong>UK Projects:</strong> Compliance consulting and steel sourcing.</li>
+										<li>Brazil/Argentina: Coke Oven Machinery fabrication.</li>
+										<li>Japan: High-standard coke tank welding (Fukuda).</li>
+										<li>Shanghai Baosteel: Equipment commissioning.</li>
+										<li>South Africa: Strategic rail and mining steel exports.</li>
+										<li>Australia: Professional QA/QC & Technical Audit.</li>
 									</ul>
 								</section>
 							</div>
@@ -187,49 +109,16 @@
 					</div>
 				</section>
 
-			<!-- Project Gallery (照片墙) -->
+			<!-- Project Gallery -->
 				<section id="projects" style="background: #fbfbfb; padding: 60px 0; border-top: 1px solid #eee;">
 					<div class="container">
-						<header>
-							<h2 style="font-size: 2em; margin-bottom: 10px;">Field Project Gallery</h2>
-							<p>Click on any image to view details of our site operations.</p>
-						</header>
+						<header><h2 style="font-size: 2em; margin-bottom: 10px;">Field Project Gallery</h2><p>Click to enlarge site operations.</p></header>
 						<div class="project-gallery">
-							<!-- 使用 glightbox 类开启大图功能 -->
-							<div class="project-item">
-								<a href="images/project-01.jpg" class="glightbox"><img src="images/project-01.jpg" alt="Steel Fabrication" /></a>
-								<p>Steel Fabrication</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-02.jpg" class="glightbox"><img src="images/project-02.jpg" alt="Coke Machinery" /></a>
-								<p>Coke Machinery Assembly</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-03.jpg" class="glightbox"><img src="images/project-03.jpg" alt="Site Inspection" /></a>
-								<p>On-site Inspection</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-04.jpg" class="glightbox"><img src="images/project-04.jpg" alt="Mining Equipment" /></a>
-								<p>Mining Equipment</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-05.jpg" class="glightbox"><img src="images/project-05.jpg" alt="Steel Structure" /></a>
-								<p>Custom Steel Structure</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-06.jpg" class="glightbox"><img src="images/project-06.jpg" alt="Quality Audit" /></a>
-								<p>Quality Auditing</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-07.jpg" class="glightbox"><img src="images/project-07.jpg" alt="Logistics" /></a>
-								<p>Loading & Logistics</p>
-							</div>
-							<div class="project-item">
-								<a href="images/project-08.jpg" class="glightbox"><img src="images/project-08.jpg" alt="Technical Operation" /></a>
-								<p>Brazil Project</p>
-							</div>
+							<div class="project-item"><a href="images/project-01.jpg" class="glightbox"><img src="images/project-01.jpg" alt="Steel Fabrication" /></a><p>Steel Fabrication</p></div>
+							<div class="project-item"><a href="images/project-02.jpg" class="glightbox"><img src="images/project-02.jpg" alt="Coke Machinery" /></a><p>Coke Machinery</p></div>
+							<div class="project-item"><a href="images/project-03.jpg" class="glightbox"><img src="images/project-03.jpg" alt="Site Inspection" /></a><p>Site Inspection</p></div>
+							<div class="project-item"><a href="images/project-04.jpg" class="glightbox"><img src="images/project-04.jpg" alt="Mining Equipment" /></a><p>Mining Equipment</p></div>
 						</div>
-						<p style="font-size: 0.8em; color: #999; margin-top: 10px;">* Swipe left or right to explore. Click to enlarge.</p>
 					</div>
 				</section>
 
@@ -239,58 +128,32 @@
 						<div class="row">
 							<div class="col-8 col-12-medium">
 								<section>
-									<h2>Our Supply Chain Services</h2>
+									<h2>Our Services</h2>
 									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="link-list last-child">
-												<li>Technical Audit & Evaluation</li>
-												<li>Quality Control & Inspection (QA/QC)</li>
-												<li>International Standard Compliance</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="link-list last-child">
-												<li>Tier-1 Manufacturer Sourcing</li>
-												<li>Logistics & Export Documentation</li>
-												<li>Technical Translation & Compliance</li>
-											</ul>
-										</div>
+										<div class="col-6 col-12-small"><ul class="link-list last-child"><li>Technical Audit</li><li>QA/QC Inspection</li><li>Standard Compliance</li></ul></div>
+										<div class="col-6 col-12-small"><ul class="link-list last-child"><li>Tier-1 Sourcing</li><li>Logistics Management</li><li>Tech Translation</li></ul></div>
 									</div>
 								</section>
 							</div>
 							<div class="col-4 col-12-medium">
 								<section>
 									<h2>Contact Us</h2>
-									<p>
-										<strong>Call:</strong> <a href="tel:+8613810675825">+86 138 1067 5825</a><br/>
-										<strong>WhatsApp:</strong> <a href="https://wa.me/17124208244">+1 (712) 420-8244</a><br/>
-										<strong>Email:</strong> <a href="mailto:info@honorssteel.com">info@honorssteel.com</a>
-									</p>
+									<p><strong>Call:</strong> +86 138 1067 5825<br/><strong>WhatsApp:</strong> +1 712 420 8244<br/><strong>Email:</strong> info@honorssteel.com</p>
 								</section>
 							</div>
 						</div>
 					</div>
 				</section>
 
-			<!-- Copyright -->
-				<div id="copyright">
-					&copy; Honors Industrial (HongShi). All rights reserved.
-				</div>
+				<div id="copyright">&copy; Honors Industrial (HongShi). All rights reserved.</div>
 		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-			<!-- 引入大图查看器 JS 并初始化 -->
-			<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-			<script type="text/javascript">
-				const lightbox = GLightbox({
-					selector: '.glightbox'
-				});
-			</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+		<script type="text/javascript">const lightbox = GLightbox({selector: '.glightbox'});</script>
 	</body>
 </html>
